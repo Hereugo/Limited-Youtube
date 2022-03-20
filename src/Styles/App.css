@@ -1,0 +1,27 @@
+.App {
+  background-color: #222;
+
+  margin: 0 auto;
+
+  width: 350px;
+  height: auto;
+
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container * {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,25 @@
+/* .react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+} */
+
+.light {
+    fill: black;
+
+    height: 0;
+    width: 0;
+}
+.dark {
+    fill: white;
+
+    height: 0;
+    width: 0;
+}
+
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button svg.light {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.react-switch-checkbox::
