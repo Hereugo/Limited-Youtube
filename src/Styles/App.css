@@ -1,27 +1,42 @@
-.App {
-  background-color: #222;
-
-  margin: 0 auto;
-
-  width: 350px;
-  height: auto;
-
-  padding: 1rem;
+.App.light {
+	--background-color: #fff;
+	--background-color-hover: #e7e7e7;
+	--color: #222;
+}
+.App.dark {
+	--background-color: #222;
+	--background-color-hover: #333;
+	--color: #fff;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.App {
+	--transition-delay: 0.2s;
 
-  width: 100%;
+	margin: 0 auto;
+
+	width: 350px;
+	height: auto;
+
+	padding: 1rem;
+
+	background-color: var(--background-color);
+	color: var(--color);
+
+	transition: all var(--transition-delay) ease-in-out;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+
+	border: 0.5px solid var(--color);
 }
 
 .button-container {
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .button-container * {
-  margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }

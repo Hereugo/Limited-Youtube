@@ -12,7 +12,7 @@ const LinkButton = ({
     icon?: any
 }) => {
     return (
-        <a target="_blank" href={url}>
+        <a target="_blank" rel="noreferrer" href={url}>
             <button className={ `button ${className}`}>
                 {icon}
                 {text}                
