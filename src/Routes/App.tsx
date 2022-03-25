@@ -11,7 +11,7 @@ import '../Styles/App.css';
 
 const App = () => {
 	return (
-		<div className="App light">
+		<div className="App">
 		<Header/>
 		<main>
 			<p>This extension allows you to hide videos on youtube that contain certain keywords</p>

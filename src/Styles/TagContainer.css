@@ -1,0 +1,59 @@
+.tags-input-field {
+    width: 100%;
+    height: auto;
+}
+
+.tag {
+    background-color: transparent;
+    color: var(--color);
+
+    border: 1px solid var(--color);
+    border-radius: 0.25rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.2rem;
+
+    text-align: center;
+}
+.tag .close-icon {
+    width: 1rem;
+    height: 1rem;
+}
+.tag:hover {
+    background-color: var(--background-color-hover);
+}
+
+.tag-container {
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-content: flex-start;
+    padding: 0.5rem;
+    
+    min-height: 5rem;
+    max-height: 7rem;
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+.tag-input {
+    background-color: transparent;
+    color: var(--color);
+
+    padding: 0.2rem;
+    font-size: inherit;
+
+    border: 0;
+    outline: none;
+    flex: 1;
+    height: auto;
+}
