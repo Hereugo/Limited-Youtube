@@ -5,19 +5,18 @@ import App from './Routes/App';
 import SettingsApp from './Routes/SettingsApp';
 
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
 import './Styles/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    
-    <BrowserRouter>
+    <MemoryRouter>
       <Routes>
-        <Route path="/" element={<App/>} />
+        <Route path="" element={<App/>} />
         <Route path="/settings" element={<SettingsApp/>} />
       </Routes>
-    </BrowserRouter>
+    </MemoryRouter>
 
   </React.StrictMode>,
   document.getElementById('root')

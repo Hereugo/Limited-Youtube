@@ -36,10 +36,10 @@ class SettingsApp extends React.Component<{}, SettingsAppState> {
     }
 
     applySettings() {
-        console.log("Applying settings");
-
         localStorage.setItem("whitelist", JSON.stringify(this.state.whitelist));
         localStorage.setItem("blacklist", JSON.stringify(this.state.blacklist));
+        
+        alert("Tags are saved!");
     }
 
     render() {
